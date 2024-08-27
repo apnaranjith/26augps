@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      
+
+      input="    trim end    ",output="";
+console.log("input length: "+input.length);
+for(i=input.length-1;i>=0;i--){
+    if(input[i]!=" "){
+        for(j=i;j>=0;j--){
+            output=output+input[j];
+            
+        }
+        break;
+    }
+    
+}
+res="";
+
+for(i=output.length-1;i>=0;i--){
+    res=res+output[i];
+    
+}
+console.log(res)
+console.log("output: "+res.length);
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        input=prompt("enter your string:");
+first=0;output="";
+for(i=0;i<input.length;i++){
+    if(input[i]=="a"||input[i]=="e"||input[i]=="i"||input[i]=="o"||input[i]=="u"){
+        if(first==0){
+            first++;
+            continue;
+        }
+        else{
+            for(j=i;j<input.length;j++){
+                output=output+input[j];
+                
+            }
+            break;
+        }
+        
+    }
+}
+console.log(output);
+    </script>
+</body>
+</html>
